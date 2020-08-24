@@ -2,6 +2,7 @@
   "name": "pakag",
   "version": "1.0.0",
   "description": "Format package.json contents when editing.",
+  "repository": "github:tobua/pakag",
   "main": "./index.js",
   "source": "./index.js",
   "types": "./index.d.ts",
