@@ -4,19 +4,18 @@
   "description": "Format package.json contents when editing.",
   "repository": "github:tobua/pakag",
   "type": "module",
-  "main": "dist/index.js",
-  "source": "index.ts",
-  "types": "dist/index.d.ts",
+  "main": "./index.js",
+  "source": "./index.js",
+  "types": "./index.d.ts",
   "files": [
-    "dist"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
-    "build": "padua build",
     "lint": "padua lint",
     "release": "padua publish",
     "test": "padua test",
-    "update": "padua update",
-    "watch": "padua watch"
+    "update": "padua update"
   },
   "prettier": "padua/configuration/.prettierrc.json",
   "eslintConfig": {
