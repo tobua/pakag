@@ -24,6 +24,17 @@ const formattedContents = formatPackageJson(packageContents)
 writeFileSync(packageJsonPath, formattedContents)
 ```
 
+## Options
+
+Options can be provided as the second parameter.
+
+```
+formatPackageJson(packageContents, {
+    // Sort properties using sort-package-json.
+    sort: false
+})
+```
+
 ## Features
 
 - Compatible with npm formatting
