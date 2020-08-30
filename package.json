@@ -1,25 +1,22 @@
 {
   "name": "pakag",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Format package.json contents when editing.",
   "repository": "github:tobua/pakag",
-  "main": "./index.js",
-  "source": "./index.js",
-  "types": "./index.d.ts",
   "type": "module",
+  "main": "dist/index.js",
+  "source": "index.ts",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
-    "index.d.ts"
+    "dist"
   ],
   "scripts": {
+    "build": "padua build",
     "lint": "padua lint",
-    "publish": "padua publish",
+    "release": "padua publish",
     "test": "padua test",
-    "update": "padua update"
-  },
-  "dependencies": {
-    "prettier": "^2.1.1",
-    "sort-package-json": "^1.44.0"
+    "update": "padua update",
+    "watch": "padua watch"
   },
   "prettier": "padua/configuration/.prettierrc.json",
   "eslintConfig": {
@@ -40,6 +37,10 @@
         }
       ]
     }
+  },
+  "dependencies": {
+    "prettier": "^2.1.1",
+    "sort-package-json": "^1.44.0"
   },
   "devDependencies": {
     "padua": "^0.0.6"
