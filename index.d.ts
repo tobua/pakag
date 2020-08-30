@@ -1,3 +1,10 @@
 // Reference: https://www.typescriptlang.org/play
-declare const _default: (packageContents: string) => string
+interface IOptions {
+  sort?: boolean
+}
+
+declare const _default: (
+  packageContents: string,
+  userOptions?: IOptions
+) => string
 export default _default
