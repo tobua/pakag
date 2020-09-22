@@ -3,6 +3,45 @@ import sortPackageJson from 'sort-package-json'
 
 const defaultOptions = {
   sort: true,
+  // Customize sort order for this package.
+  sortOrder: [
+    'name',
+    'description',
+    'version',
+    'private',
+    'repository',
+    'homepage',
+    'bugs',
+    'license',
+    'author',
+    'contributors',
+    'scripts',
+    'papua',
+    'padua',
+    'dependencies',
+    'peerDependencies',
+    'type',
+    'main',
+    'umd:main',
+    'browser',
+    'module',
+    'unpkg',
+    'esmodule',
+    'bin',
+    'source',
+    'types',
+    'typings',
+    'files',
+    'keywords',
+    'devDependencies',
+    'prettier',
+    'eslintConfig',
+    'tsconfig',
+    'jsconfig',
+    'jest',
+    'os',
+    'engines',
+  ],
 }
 
 export default (packageContents, userOptions = {}) => {
@@ -10,7 +49,9 @@ export default (packageContents, userOptions = {}) => {
   let newContents = packageContents
 
   if (options.sort) {
-    newContents = sortPackageJson(packageContents)
+    newContents = sortPackageJson(packageContents, {
+      sortOrder: options.sortOrder,
+    })
   }
 
   return prettier.format(newContents, {

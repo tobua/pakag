@@ -28,10 +28,12 @@ writeFileSync(packageJsonPath, formattedContents)
 
 Options can be provided as the second parameter.
 
-```
+```js
 formatPackageJson(packageContents, {
-    // Sort properties using sort-package-json.
-    sort: false
+  // Sort properties using sort-package-json.
+  sort: false,
+  // Customize sort order for package.json keys.
+  sortOrder: ['version'],
 })
 ```
 

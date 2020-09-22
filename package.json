@@ -3,6 +3,13 @@
   "version": "1.1.1",
   "description": "Format package.json contents when editing.",
   "repository": "github:tobua/pakag",
+  "scripts": {
+    "test": "padua test"
+  },
+  "dependencies": {
+    "prettier": "^2.1.2",
+    "sort-package-json": "^1.46.0"
+  },
   "type": "module",
   "main": "./index.js",
   "source": "./index.js",
@@ -11,11 +18,8 @@
     "index.js",
     "index.d.ts"
   ],
-  "scripts": {
-    "lint": "padua lint",
-    "release": "padua publish",
-    "test": "padua test",
-    "update": "padua update"
+  "devDependencies": {
+    "padua": "^0.0.11"
   },
   "prettier": "padua/configuration/.prettierrc.json",
   "eslintConfig": {
@@ -36,13 +40,6 @@
         }
       ]
     }
-  },
-  "dependencies": {
-    "prettier": "^2.1.1",
-    "sort-package-json": "^1.44.0"
-  },
-  "devDependencies": {
-    "padua": "^0.0.6"
   },
   "engines": {
     "node": ">= 13.2.0"
