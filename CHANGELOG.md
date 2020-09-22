@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/tobua/pakag/compare/v1.1.1...v2.0.0) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ordering:** custom ordering for this package
+
+### Features
+
+* **ordering:** customize how package keys are sorted by default ([45b62b6](https://github.com/tobua/pakag/commit/45b62b659386bca68ae62a1debdfd6efddc77bc2))
+
 ### [1.1.1](https://github.com/tobua/pakag/compare/v1.1.0...v1.1.1) (2020-08-30)
 
 
