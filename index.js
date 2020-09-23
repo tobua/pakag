@@ -20,6 +20,7 @@ const defaultOptions = {
     'padua',
     'dependencies',
     'peerDependencies',
+    'localDependencies',
     'type',
     'main',
     'umd:main',
