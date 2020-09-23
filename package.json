@@ -1,6 +1,6 @@
 {
   "name": "pakag",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Format package.json contents when editing.",
   "repository": "github:tobua/pakag",
   "type": "module",

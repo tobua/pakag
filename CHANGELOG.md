@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/tobua/pakag/compare/v2.0.0...v2.0.1) (2020-09-23)
+
+
+### Bug Fixes
+
+* **configuration:** fix package fields and add another sort property ([ff4ee0a](https://github.com/tobua/pakag/commit/ff4ee0a4d17a4e64a1d83bf55a31b0f1ebd57e20))
+
 ## [2.0.0](https://github.com/tobua/pakag/compare/v1.1.1...v2.0.0) (2020-09-22)
 
 
