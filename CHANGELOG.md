@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/tobua/pakag/compare/v2.0.1...v2.0.2) (2020-10-02)
+
+
+### Bug Fixes
+
+* **package:** update dependencies ([536bf25](https://github.com/tobua/pakag/commit/536bf25577ca17ff725dc7c067d6cd5074e12d37))
+
 ### [2.0.1](https://github.com/tobua/pakag/compare/v2.0.0...v2.0.1) (2020-09-23)
 
 
