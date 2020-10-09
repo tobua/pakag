@@ -37,6 +37,7 @@ const defaultOptions = {
     'devDependencies',
     'prettier',
     'eslintConfig',
+    'stylelint',
     'tsconfig',
     'jsconfig',
     'jest',
