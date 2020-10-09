@@ -1,7 +1,7 @@
 {
   "name": "pakag",
   "description": "Format package.json contents when editing.",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "repository": "github:tobua/pakag",
   "scripts": {
     "test": "padua test"
@@ -18,8 +18,7 @@
   "source": "index.js",
   "types": "index.d.ts",
   "files": [
-    "**/*.js",
-    "index.d.ts"
+    "**/*.js"
   ],
   "devDependencies": {
     "padua": "^0.1.1"

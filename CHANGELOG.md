@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/tobua/pakag/compare/v2.0.2...v2.1.0) (2020-10-09)
+
+
+### Features
+
+* **ordering:** add stylelint entry after other linter configurations ([082429b](https://github.com/tobua/pakag/commit/082429b50b65043e10f9f5052b04a13c35279de4))
+
 ### [2.0.2](https://github.com/tobua/pakag/compare/v2.0.1...v2.0.2) (2020-10-02)
 
 
