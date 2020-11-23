@@ -10,18 +10,19 @@
     "source": true
   },
   "dependencies": {
-    "prettier": "^2.1.2",
-    "sort-package-json": "^1.46.0"
+    "prettier": "^2.2.0",
+    "sort-package-json": "^1.48.0"
   },
   "type": "module",
   "main": "index.js",
   "source": "index.js",
   "types": "index.d.ts",
   "files": [
-    "**/*.js"
+    "index.js",
+    "index.d.ts"
   ],
   "devDependencies": {
-    "padua": "^0.1.1"
+    "padua": "^0.1.4"
   },
   "prettier": "padua/configuration/.prettierrc.json",
   "eslintConfig": {
