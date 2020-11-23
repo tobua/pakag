@@ -1,7 +1,7 @@
 {
   "name": "pakag",
   "description": "Format package.json contents when editing.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "repository": "github:tobua/pakag",
   "scripts": {
     "test": "padua test"
