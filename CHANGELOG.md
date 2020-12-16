@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/tobua/pakag/compare/v2.1.1...v2.2.0) (2020-12-16)
+
+
+### Features
+
+* **ordering:** add sideEffects and prioritize module ([0cb275c](https://github.com/tobua/pakag/commit/0cb275c76e2397b8d354b9b3acfe8cc258bc21b9))
+
 ### [2.1.1](https://github.com/tobua/pakag/compare/v2.1.0...v2.1.1) (2020-11-23)
 
 ## [2.1.0](https://github.com/tobua/pakag/compare/v2.0.2...v2.1.0) (2020-10-09)
