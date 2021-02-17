@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/tobua/pakag/compare/v2.2.1...v2.3.0) (2021-02-17)
+
+
+### Features
+
+* **ordering:** add browserslist field ([14811bf](https://github.com/tobua/pakag/commit/14811bfe4b44407faafe4ef4b75a7b876dc50690))
+
 ### [2.2.1](https://github.com/tobua/pakag/compare/v2.2.0...v2.2.1) (2021-02-09)
 
 ## [2.2.0](https://github.com/tobua/pakag/compare/v2.1.1...v2.2.0) (2020-12-16)
