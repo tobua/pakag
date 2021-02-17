@@ -34,6 +34,7 @@ const defaultOptions = {
     'types',
     'typings',
     'files',
+    'browserslist',
     'keywords',
     'devDependencies',
     'prettier',
