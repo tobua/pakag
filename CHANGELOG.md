@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/tobua/pakag/compare/v2.3.0...v2.4.0) (2021-03-14)
+
+
+### Features
+
+* **ordering:** add property for new backend plugin and fix tests ([ff50be7](https://github.com/tobua/pakag/commit/ff50be71c5a70f24434add8f40d28950ff9de24d))
+
 ## [2.3.0](https://github.com/tobua/pakag/compare/v2.2.1...v2.3.0) (2021-02-17)
 
 
