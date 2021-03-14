@@ -20,9 +20,9 @@ test('Sorts according to custom sort order for this package.', () => {
         "typescript": false
     },
     "scripts": {
-        "test": "jest",
+        "build": "webpack",
         "start": "webpack-dev-server",
-        "build": "webpack"
+        "test": "jest"
     },
     "name": "sorting",
     "description": "Hello world"
@@ -80,9 +80,9 @@ test('Sort order can be customized.', () => {
         "typescript": false
     },
     "scripts": {
-        "test": "jest",
+        "build": "webpack",
         "start": "webpack-dev-server",
-        "build": "webpack"
+        "test": "jest"
     },
     "name": "sorting",
     "description": "Hello world"

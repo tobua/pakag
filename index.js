@@ -18,6 +18,7 @@ const defaultOptions = {
     'scripts',
     'papua',
     'padua',
+    'squak',
     'dependencies',
     'peerDependencies',
     'localDependencies',
