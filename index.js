@@ -19,11 +19,13 @@ const defaultOptions = {
     'papua',
     'padua',
     'squak',
+    'build', // electron-builder
     'dependencies',
     'peerDependencies',
     'localDependencies',
     'type',
     'main',
+    'exports',
     'module',
     'sideEffects',
     'umd:main',

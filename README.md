@@ -2,6 +2,11 @@
 
 Format package.json contents when working with it in node.
 
+## Features
+
+- Compatible with npm formatting
+- Sorts properties
+
 ## Installation and Usage
 
 ```
@@ -30,14 +35,9 @@ Options can be provided as the second parameter.
 
 ```js
 formatPackageJson(packageContents, {
-  // Sort properties using sort-package-json.
+  // Sort properties using sort-package-json, default true.
   sort: false,
-  // Customize sort order for package.json keys.
+  // Customize sort order for package.json keys, default order see index.js.
   sortOrder: ['version'],
 })
 ```
-
-## Features
-
-- Compatible with npm formatting
-- Sorts properties
