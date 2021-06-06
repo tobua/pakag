@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/tobua/pakag/compare/v2.4.0...v2.5.0) (2021-06-06)
+
+
+### Features
+
+* **ordering:** add exports field for ES Module packages ([8fba02f](https://github.com/tobua/pakag/commit/8fba02fc2477a68b64e7b683bff7c6fdfe73fece))
+
 ## [2.4.0](https://github.com/tobua/pakag/compare/v2.3.0...v2.4.0) (2021-03-14)
 
 
