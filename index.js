@@ -19,6 +19,7 @@ const defaultOptions = {
     'papua',
     'padua',
     'squak',
+    'numic',
     'build', // electron-builder
     'dependencies',
     'peerDependencies',

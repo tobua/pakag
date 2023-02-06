@@ -10,15 +10,15 @@
     "source": true
   },
   "dependencies": {
-    "prettier": "^2.4.1",
-    "sort-package-json": "^1.52.0"
+    "prettier": "^2.8.3",
+    "sort-package-json": "^2.4.1"
   },
   "type": "module",
+  "sideEffects": true,
   "main": "index.js",
   "exports": {
-    "default": "./index.js"
+    ".": "./index.js"
   },
-  "sideEffects": false,
   "source": "index.js",
   "types": "index.d.ts",
   "files": [
@@ -26,7 +26,7 @@
     "index.d.ts"
   ],
   "devDependencies": {
-    "padua": "^0.4.1"
+    "padua": "^1.1.0"
   },
   "prettier": "padua/configuration/.prettierrc.json",
   "eslintConfig": {
@@ -46,9 +46,12 @@
           "configFile": "./node_modules/padua/configuration/.babelrc"
         }
       ]
-    }
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!sort-object-keys|sort-package-json|detect-indent|detect-newline|is-plain-obj)"
+    ]
   },
   "engines": {
-    "node": ">= 14"
+    "node": ">= 16"
   }
 }
