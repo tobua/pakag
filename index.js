@@ -5,7 +5,9 @@ const defaultOptions = {
   sort: true,
   // Customize sort order for this package.
   sortOrder: [
+    '$schema',
     'name',
+    'productName', // electron app name
     'description',
     'version',
     'private',

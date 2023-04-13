@@ -10,7 +10,7 @@
     "source": true
   },
   "dependencies": {
-    "prettier": "^2.8.3",
+    "prettier": "^2.8.7",
     "sort-package-json": "^2.4.1"
   },
   "type": "module",
@@ -26,7 +26,7 @@
     "index.d.ts"
   ],
   "devDependencies": {
-    "padua": "^1.1.0"
+    "padua": "^1.2.2"
   },
   "prettier": "padua/configuration/.prettierrc.json",
   "eslintConfig": {
