@@ -1,3 +1,4 @@
+import { test, expect } from 'vitest'
 import formatPackageJson from '..'
 
 test('Sorts according to custom sort order for this package.', () => {

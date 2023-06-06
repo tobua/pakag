@@ -12,6 +12,7 @@ jobs:
       - run: npm install
       - name: 🧪 Test
         run: npm test
-      - uses: tobua/release-npm-action@v1
+      - run: npm install -g npm@latest
+      - uses: tobua/release-npm-action@v2
         with:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

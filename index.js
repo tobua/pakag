@@ -51,6 +51,7 @@ const defaultOptions = {
     'jest',
     'babel',
     'detox',
+    'publishConfig',
     'release',
     'os',
     'engines',

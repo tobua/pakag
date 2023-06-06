@@ -1,3 +1,4 @@
+import { test, expect } from 'vitest'
 import formatPackageJson from '..'
 
 test('Indents to 2 spaces.', () => {
