@@ -48,6 +48,7 @@ const defaultOptions = {
     'stylelint',
     'tsconfig',
     'jsconfig',
+    'metro',
     'jest',
     'babel',
     'detox',
