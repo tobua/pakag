@@ -1,4 +1,4 @@
-import prettier from 'prettier'
+import { format } from 'prettier'
 import sortPackageJson from 'sort-package-json'
 
 const defaultOptions = {
@@ -14,6 +14,7 @@ const defaultOptions = {
     'repository',
     'homepage',
     'bugs',
+    'funding',
     'license',
     'author',
     'contributors',
@@ -23,9 +24,15 @@ const defaultOptions = {
     'squak',
     'numic',
     'build', // electron-builder
+    'workspaces',
     'dependencies',
-    'peerDependencies',
     'localDependencies',
+    'devDependencies',
+    'bundleDependencies',
+    'peerDependencies',
+    'peerDependenciesMeta',
+    'optionalDependencies',
+    'overrides',
     'type',
     'sideEffects',
     'main',
@@ -42,7 +49,6 @@ const defaultOptions = {
     'files',
     'browserslist',
     'keywords',
-    'devDependencies',
     'prettier',
     'eslintConfig',
     'stylelint',
@@ -55,21 +61,22 @@ const defaultOptions = {
     'publishConfig',
     'release',
     'os',
+    'cpu',
     'engines',
   ],
 }
 
-export default (packageContents, userOptions = {}) => {
-  const options = { ...defaultOptions, ...userOptions }
+export function formatPackageJson(packageContents, options = {}) {
+  const userOptions = { ...defaultOptions, ...options }
   let newContents = packageContents
 
-  if (options.sort) {
+  if (userOptions.sort) {
     newContents = sortPackageJson(packageContents, {
-      sortOrder: options.sortOrder,
+      sortOrder: userOptions.sortOrder,
     })
   }
 
-  return prettier.format(newContents, {
+  return format(newContents, {
     // Same config as npm uses for formatting upon install.
     trailingComma: 'es5',
     tabWidth: 2,

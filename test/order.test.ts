@@ -1,7 +1,7 @@
 import { test, expect } from 'vitest'
-import formatPackageJson from '..'
+import { formatPackageJson } from '..'
 
-test('Sorts according to custom sort order for this package.', () => {
+test('Sorts according to custom sort order for this package.', async () => {
   const packageContents = `{
     "tsconfig": {
         "compilerOptions": {
@@ -58,10 +58,10 @@ test('Sorts according to custom sort order for this package.', () => {
 }
 `
 
-  expect(formatPackageJson(packageContents)).toEqual(resultingContents)
+  expect(await formatPackageJson(packageContents)).toEqual(resultingContents)
 })
 
-test('Sort order can be customized.', () => {
+test('Sort order can be customized.', async () => {
   const packageContents = `{
     "tsconfig": {
         "compilerOptions": {
@@ -119,7 +119,7 @@ test('Sort order can be customized.', () => {
 `
 
   expect(
-    formatPackageJson(packageContents, {
+    await formatPackageJson(packageContents, {
       sortOrder: ['devDependencies'],
     })
   ).toEqual(resultingContents)

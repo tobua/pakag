@@ -18,13 +18,13 @@ and then use it like this
 ```js
 import { readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
-import formatPackageJson from 'pakag'
+import { formatPackageJson } from 'pakag'
 
 const packageJsonPath = join(process.cwd(), 'package.json')
 
 const packageContents = readFileSync(packageJsonPath, 'utf8')
 
-const formattedContents = formatPackageJson(packageContents)
+const formattedContents = await formatPackageJson(packageContents)
 
 writeFileSync(packageJsonPath, formattedContents)
 ```
@@ -34,7 +34,7 @@ writeFileSync(packageJsonPath, formattedContents)
 Options can be provided as the second parameter.
 
 ```js
-formatPackageJson(packageContents, {
+await formatPackageJson(packageContents, {
   // Sort properties using sort-package-json, default true.
   sort: false,
   // Customize sort order for package.json keys, default order see index.js.
