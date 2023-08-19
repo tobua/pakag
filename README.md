@@ -9,7 +9,7 @@ Format package.json contents when working with it in node.
 
 ## Installation and Usage
 
-```
+```sh
 npm i pakag
 ```
 
@@ -27,6 +27,12 @@ const packageContents = readFileSync(packageJsonPath, 'utf8')
 const formattedContents = await formatPackageJson(packageContents)
 
 writeFileSync(packageJsonPath, formattedContents)
+```
+
+To format the `package.json` in the current folder from the CLI run the following:
+
+```sh
+npx pakag
 ```
 
 ## Options

@@ -10,8 +10,19 @@
     "start": "padua watch",
     "test": "vitest run"
   },
+  "padua": {
+    "entry": [
+      "index.ts",
+      "bin.ts"
+    ],
+    "esbuild": {
+      "platform": "node",
+      "format": "esm",
+      "target": "esnext"
+    }
+  },
   "dependencies": {
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.2",
     "sort-package-json": "^2.5.1"
   },
   "type": "module",
@@ -23,6 +34,7 @@
       "default": "./dist/index.js"
     }
   },
+  "bin": "./dist/bin.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -33,7 +45,7 @@
   ],
   "devDependencies": {
     "padua": "^2.0.1",
-    "vitest": "^0.33.0"
+    "vitest": "^0.34.2"
   },
   "prettier": "padua/configuration/.prettierrc.json",
   "eslintConfig": {
