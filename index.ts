@@ -32,6 +32,7 @@ const defaultOptions = {
     'peerDependencies',
     'peerDependenciesMeta',
     'optionalDependencies',
+    'trustedDependencies', // Run postinstall with Bun
     'overrides',
     'type',
     'sideEffects',

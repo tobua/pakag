@@ -1,5 +1,5 @@
-import { test, expect } from 'vitest'
-import { formatPackageJson } from '..'
+import { test, expect } from 'bun:test'
+import { formatPackageJson } from '../index'
 
 test('Indents to 2 spaces.', async () => {
   const packageContents = `{

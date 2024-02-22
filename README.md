@@ -7,13 +7,7 @@ Format package.json contents when working with it in node.
 - Compatible with npm formatting
 - Sorts properties
 
-## Installation and Usage
-
-```sh
-npm i pakag
-```
-
-and then use it like this
+## Usage
 
 ```js
 import { readFileSync, writeFileSync } from 'fs'

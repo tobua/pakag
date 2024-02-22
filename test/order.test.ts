@@ -1,5 +1,5 @@
-import { test, expect } from 'vitest'
-import { formatPackageJson } from '..'
+import { test, expect } from 'bun:test'
+import { formatPackageJson } from '../index'
 
 test('Sorts according to custom sort order for this package.', async () => {
   const packageContents = `{

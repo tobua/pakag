@@ -6,9 +6,7 @@
   "license": "MIT",
   "author": "Matthias Giger",
   "scripts": {
-    "build": "padua build",
-    "start": "padua watch",
-    "test": "vitest run"
+    "build": "padua build"
   },
   "padua": {
     "entry": [
@@ -24,6 +22,10 @@
   "dependencies": {
     "prettier": "^3.0.2",
     "sort-package-json": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.6",
+    "padua": "^2.0.1"
   },
   "type": "module",
   "sideEffects": true,
@@ -43,10 +45,6 @@
     "package.json",
     "sort"
   ],
-  "devDependencies": {
-    "padua": "^2.0.1",
-    "vitest": "^0.34.2"
-  },
   "prettier": "padua/configuration/.prettierrc.json",
   "eslintConfig": {
     "extends": "./node_modules/padua/configuration/eslint.cjs"
@@ -55,6 +53,9 @@
     "provenance": true
   },
   "engines": {
-    "node": ">= 16"
-  }
+    "node": ">= 18"
+  },
+  "trustedDependencies": [
+    "padua"
+  ]
 }

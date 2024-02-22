@@ -5,19 +5,19 @@ on:
     branches: [main]
 
 jobs:
-  release:
+  build-test-release:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - run: npm install
-      - name: 🛠️ Build
-        run: npm run build
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - name: 🚧 Build
+        run: bun run build
       - name: 🧪 Test
-        run: npm test
-      - run: npm install -g npm@latest
-      - uses: tobua/release-npm-action@v2
+        run: bun test
+      - uses: tobua/release-npm-action@v3
         with:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
