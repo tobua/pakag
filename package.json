@@ -27,6 +27,9 @@
     "@types/bun": "^1.0.6",
     "padua": "^2.0.1"
   },
+  "trustedDependencies": [
+    "padua"
+  ],
   "type": "module",
   "sideEffects": true,
   "main": "./dist/index.js",
@@ -54,8 +57,5 @@
   },
   "engines": {
     "node": ">= 18"
-  },
-  "trustedDependencies": [
-    "padua"
-  ]
+  }
 }

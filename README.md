@@ -27,6 +27,7 @@ To format the `package.json` in the current folder from the CLI run the followin
 
 ```sh
 npx pakag
+bunx pakag
 ```
 
 ## Options

@@ -1,8 +1,7 @@
+#!/usr/bin/env node
 import { readFileSync, writeFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import { formatPackageJson } from './index'
-
-console.log(typeof Bun)
 
 const packageJsonPath = join(process.cwd(), 'package.json')
 
