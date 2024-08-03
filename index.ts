@@ -37,6 +37,7 @@ const defaultOptions = {
     'type',
     'sideEffects',
     'main',
+    'imports',
     'exports',
     'module',
     'umd:main',

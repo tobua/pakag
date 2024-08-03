@@ -20,12 +20,12 @@
     }
   },
   "dependencies": {
-    "prettier": "^3.0.2",
-    "sort-package-json": "^2.5.1"
+    "prettier": "^3.3.3",
+    "sort-package-json": "^2.10.0"
   },
   "devDependencies": {
-    "@types/bun": "^1.0.6",
-    "padua": "^2.0.1"
+    "@types/bun": "^1.1.6",
+    "padua": "^4.0.1"
   },
   "trustedDependencies": [
     "padua"
